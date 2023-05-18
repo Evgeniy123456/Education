@@ -1,0 +1,48 @@
+.contacts-header {
+  padding-top: 20px;
+
+  &__logo {
+    outline: none;
+    transition: opacity .3s ease-in-out;
+
+    &:focus-visible {
+      opacity: .4;
+    }
+
+    &:hover {
+      opacity: .4;
+    }
+
+    a {
+      display: block;
+      padding: 20px 0;
+      margin: 0 auto;
+      max-width: 180px;
+      font-size: 40px;
+      line-height: 80%;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  &__descr--mobile {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+      text-align: center;
+
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+}

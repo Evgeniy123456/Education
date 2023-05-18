@@ -1,0 +1,78 @@
+<section class="contacts" id="contacts">
+  <div class="container">
+    <div class="contacts__block">
+
+      <h5 class="contacts__header caption">Мы всегда вам рады!</h5>
+      <p class="contacts__header-descr text">
+        Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов и ресурсов.
+      </p>
+
+      <form class="contacts-form form" action="mail.php" method="post">
+
+        <div class="relativ" style="width: 100%;">
+          <input
+            name="name"
+            type="text"
+            class="input-reset contacts-form__input contacts-form__input-name"
+            placeholder="Как вас зовут?"
+            autocomplete="on"
+            data-validate-field="name"
+          >
+          <div class="just-validate-error-label"></div>
+        </div>
+
+        <div class="relativ" style="width: 100%;">
+          <input
+            name="phone"
+            type="tel"
+            class="input-reset contacts-form__input contacts-form__input-phone"
+            placeholder="Ваш телефон"
+            autocomplete="on"
+            data-validate-field="tel"
+            data-validate-rules="phone"
+          >
+          <div class="just-validate-error-label"></div>
+        </div>
+
+        <div class="relativ" style="width: 100%;">
+          <input
+            name="email"
+            type="email"
+            class="input-reset contacts-form__input contacts-form__input-email"
+            placeholder="Ваш e-mail"
+            autocomplete="on"
+            data-validate-field="mail"
+          >
+          <div class="just-validate-error-label"></div>
+        </div>
+
+        <div class="relativ" style="width: 100%;">
+          <input
+            name="text"
+            type="text"
+            class="input-reset contacts-form__input contacts-form__input-comment"
+            placeholder="Ваш комментарий"
+            data-validate-field="comment"
+          >
+        </div>
+
+        <button type="submit" class="btn-reset contacts-form__btn">Оcтавить заявку</button>
+
+        <label class="custom-checkbox">
+          <div class="relativ d-flex" style="width: 100%;">
+            <input
+              type="checkbox"
+              checked
+              required
+              class="custom-checkbox__field"
+              data-validate-field="checkbox"
+            >
+            <span class="custom-checkbox__content">Принимаю<a href="privacy.html"> пользовательское&nbsp;соглашение</a></span>
+          </div>
+        </label>
+
+      </form>
+
+    </div>
+  </div>
+</section>

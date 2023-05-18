@@ -1,0 +1,173 @@
+.document {
+  padding-top: 82px;
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+  // .document__header
+
+  &__header {
+  }
+
+  &__block {
+    margin-bottom: 30px;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+
+    @include tablet {
+      padding: 15px;
+    }
+  }
+  // .document__list-header
+
+  &__list-header {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    color: var(--black-color);
+
+    @include tablet {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+    @include small-tablet {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+
+    @include mobile {
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+
+  // .document__items
+
+  &__items {
+    width: 17%;
+    text-align: center;
+    &:first-child {
+      width: 30%;
+      text-align: start;
+      padding-left: 15px;
+
+      @include tablet {
+       padding-left: 0;
+      }
+    }
+  }
+
+  // .document__list
+
+  &__list {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #000;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .document__inems
+
+  &__inems {
+    width: 17%;
+    padding-bottom: 5px;
+    text-align: center;
+
+    @include tablet {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    @include small-tablet {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    @include mobile {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    &:first-child {
+      width: 30%;
+      padding-left: 15px;
+      font-size: 18px;
+      text-align: start;
+
+      @include tablet {
+        padding-left: 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 120%;
+      }
+
+      @include small-tablet {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+
+      @include mobile {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+    }
+
+    a {
+      color: var(--default-red);
+      outline: none;
+      font-weight: 600;
+
+      &:focus-visible {
+        color: var(--hover-red);
+      }
+
+      &:hover {
+        color: var(--hover-red);
+      }
+
+      &:active {
+        color: var(--active-red);
+      }
+    }
+  }
+
+  // .document__note
+
+  &__note {
+    display: inline-block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--light-color);
+    background-color: var(--default-red);
+    border-radius: 10px;
+
+    @include small-tablet {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+  }
+}
+

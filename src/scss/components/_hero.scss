@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+  // .hero__swiper
+
+  &__swiper {
+    max-height: 620px;
+  }
+
+  // .hero__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .hero__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .hero__swiper-image
+
+  &__swiper-image {
+    object-fit: cover;
+  }
+
+  // .hero__block
+
+  &__block {
+    position: absolute;
+    bottom: 0;
+    padding: 60px 0;
+    max-width: 50%;
+    z-index: 2;
+
+    @include tablet {
+      padding: 40px 0;
+    }
+
+    @include small-tablet {
+      padding: 60px 0;
+    }
+
+    @include mobile {
+      padding: 40px 0;
+    }
+  }
+
+  // .hero__block-title
+
+  &__block-title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    color: #FFFFFF;
+
+    @include tablet {
+      font-size: 50px;
+      line-height: 120%;
+    }
+
+    @include small-tablet {
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 120%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  // .hero__block-subtitle
+
+  &__block-subtitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    @include small-tablet {
+      font-size: 16px;
+      line-height: 110%;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  // .hero__block-btn
+
+  &__block-btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    border: 1px solid var(--default-red);
+    border-radius: 10px;
+    padding: 12px 20px;
+    background-color: var(--default-red);
+    color: var(--light-color);
+    transition: background-color .3s ease-in-out, outline .3s ease-in-out, border .3s ease-in-out, transform .3s ease-in-out;
+
+    &:focus-visible {
+      background-color: var(--hover-red);
+      outline: 2px solid var(--active-red);
+      outline-offset: 3px;
+    }
+    &:hover {
+      background-color: var(--hover-red);
+      transform: scale(1.02, 1.02);
+    }
+
+    &:active {
+      background-color: var(--active-red);
+      border: 1px solid transparent;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 100%;
+      padding: 12px 12px;
+
+    }
+  }
+}
+
