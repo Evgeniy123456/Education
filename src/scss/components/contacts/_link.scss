@@ -1,0 +1,134 @@
+.link {
+  padding-bottom: 40px;
+
+  @include mobile {
+    background-color: #292929;
+  }
+  // .link__block
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    outline: none;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:focus-visible {
+      transform: scale(1.01, 1.01);
+      opacity: 1;
+    }
+
+    &:hover {
+      transform: scale(1.01, 1.01);
+      opacity: 1;
+    }
+  }
+
+  &__item--website{
+    background-color: #ff1f1f;;
+  }
+
+  &__item--instagramm{
+    background: linear-gradient(225deg, #1400C8 0%, #B900B4 50.52%, #F50000 100%);
+  }
+
+  &__item--googleform {
+    background-color: #f3bebe;
+  }
+
+  &__item--mail {
+    background-color: #0085FF;
+  }
+
+  &__item--telegramm {
+    background-color: #000000;
+  }
+
+  &__item--whatsapp {
+    background-color: #00e651;
+  }
+
+  &__item--vk {
+    background-color: #4078e2;
+  }
+
+  // .link__website
+  &__website {
+    padding-left: 45px;
+    background-image: url("../img/social/link/link-website.svg");
+    background-size: 35px 35px;
+  }
+
+  &__instagramm {
+    padding-left: 40px;
+    background-image: url("../img/social/link/instagram.png");
+    background-size: 35px 35px;
+  }
+  // .link__googleform
+
+  &__googleform {
+    padding-left: 40px;
+    background-size: 35px 35px;
+    background-image: url("../img/social/link/google.png");
+  }
+
+  &__mail {
+    padding-left: 35px;
+    background-size: 25px 25px;
+    background-position: left 28% center !important;
+
+    background-image: url("../img/social/link/mail.png");
+  }
+
+  // .link__telegramm
+
+  &__telegramm {
+    padding-left: 45px;
+    background-size: 30px 30px;
+    background-image: url("../img/social/link/telegramm.png");
+  }
+
+  // .link__whatsapp
+
+  &__whatsapp {
+    padding-left: 40px;
+    background-size: 35px 35px;
+    background-image: url("../img/social/link/whatsapp.png");
+  }
+
+  // .link__vk
+
+  &__vk {
+    padding-left: 40px;
+    background-size: 35px 35px;
+    background-image: url("../img/social/link/vk.png");
+  }
+}
+
+.link-btn {
+  padding: 0 90px ;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  background-position: left 21% center;
+  background-repeat: no-repeat;
+}

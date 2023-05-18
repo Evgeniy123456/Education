@@ -1,0 +1,46 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "OpenSans", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --contacts-content-width: 300px;
+  --contacts-container-offset: 38px;
+  --contacts-container-width: calc(var(--contacts-content-width) + (var(--contacts-container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --default-red: #ff5757;
+  --hover-red: #fc2525;
+  --active-red: #ae0000;
+  --orange-color: #FF862F;
+  --black-color: #333333;
+  --grey-shade-color: #666666;
+  --grey-color: #999999;
+  --greyF7-color: #F7F7F7;
+
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --content-width: 952px;
+    --container-offset: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content-width: 708px;
+    --container-offset: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --content-width: 552px;
+    --container-offset: 12px;
+  }
+}
