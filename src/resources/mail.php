@@ -32,16 +32,16 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'itp2019@mail.ru'; // Логин на почте
-  $mail->Password   = 'z1kLWfsSQMsxHTJWnmda'; // Пароль на почте
+  $mail->Host       = '*****************'; // SMTP сервера вашей почты
+  $mail->Username   = '*****************'; // Логин на почте
+  $mail->Password   = '*****************'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('itp2019@mail.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('*************', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('study.in.wuchang@gmail.com');
+  $mail->addAddress('*****************');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
